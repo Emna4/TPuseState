@@ -31,7 +31,7 @@ const [Tasks, setTasks] =useState([
       description : "qsdqsdqdqsdqdqdqdsdqsdqsdqsdq"
 }])
 const addTask=(title, duration,type,date,description)=>{
-  setTasks(previousTasks=>[...previousTasks,{title, duration, type,date,description}])
+  setTasks(previousTasks=>[...previousTasks,{id : previousTasks.length+1,title, duration, type,date,description}])
 }
 const deleteTask=(id)=>{
   const newTasks= Tasks.filter(task=>task.id!==id)

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './Task.css'
-
-
+ 
 function Task ({title ,duration,type,date,description,id,deleteTask,updateTask}){
   const [updateMode,setUpdateMode]=useState(false)
   const [titleToUpdate,setTitleToUpdate]=useState(title)
