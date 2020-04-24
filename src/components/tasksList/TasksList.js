@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Task from '../task/Task.js'
+import './TaskList.css'
 
 function TasksList({Tasks,deleteTask, updateTask} ) {
    // const sayHello = () =>{ alert("hello")}
